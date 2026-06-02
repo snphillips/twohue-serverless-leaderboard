@@ -1,0 +1,27 @@
+[functions]
+  directory = "netlify/functions"
+
+[[redirects]]
+  from = "/players"
+  to = "/.netlify/functions/getPlayers"
+  status = 200
+
+[[redirects]]
+  from = "/players/:id"
+  to = "/.netlify/functions/getPlayerById"
+  status = 200
+
+[[redirects]]
+  from = "/players"
+  to = "/.netlify/functions/createPlayer"
+  status = 200
+
+[[redirects]]
+  from = "/players/:id"
+  to = "/.netlify/functions/updatePlayer"
+  status = 200
+
+[[redirects]]
+  from = "/players/:id"
+  to = "/.netlify/functions/deletePlayer"
+  status = 200
